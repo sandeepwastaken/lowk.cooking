@@ -1,0 +1,33 @@
+<!doctype html>
+<script>
+// name = file in ./images/   ->  loader.html?img=name   (rebuilt by build-pages.sh)
+var IMAGES = {
+  achyutha: "achyutha.png",
+  akhil: "akhil.png",
+  akshaj: "akshaj.png",
+  ayaan: "ayaan.png",
+  baldrav: "baldrav.png",
+  flabwath: "flabwath.png",
+  gaurav: "gaurav.png",
+  joey: "joey.png",
+};
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Loader</title>
+<link rel="icon" id="fav">
+<style>
+html,body{margin:0;height:100%;overflow:hidden;background:#000}
+img{display:block;width:100vw;height:100vh}
+</style>
+<img id="i" alt="">
+<script>
+var k = new URLSearchParams(location.search).get("img");
+var f = IMAGES[k];
+if (f) {
+  var src = "images/" + f;
+  document.getElementById("i").src = src;
+  document.getElementById("fav").href = src;
+  document.title = k;
+}
+</script>

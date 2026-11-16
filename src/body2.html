@@ -1,0 +1,72 @@
+
+  <section class="morph" id="morph">
+    <canvas id="pt"></canvas>
+    <div class="hud2">
+      <div class="row"><div class="label"><b></b>(05) Matter</div><span class="mono" id="pt-count">0 particles</span></div>
+      <div class="row" style="align-items:flex-end">
+        <h2>Thirty-six thousand points with opinions. Push them around. <em>Click to reshape.</em></h2>
+        <div class="dots" id="pt-dots"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="pin simmer" id="simmer" style="height:380vh">
+    <div class="stick opaque" data-hover="POP">
+      <canvas id="sim-c" class="fill-c"></canvas>
+      <div class="pin-ui">
+        <div class="row mono"><span>(06) Simmer</span><span>Reduced <b id="s-red">0</b>%</span><span>Bubbles / min <b id="s-bub">12</b></span></div>
+        <h2 class="pin-h" id="sim-h"><span>Low and <em>slow.</em></span><span>Then a rolling <em>boil.</em></span></h2>
+        <div class="row mono"><span>Scroll to bring it to a boil</span><span>Click to pop</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sauce" id="sauce" data-hover="STIR">
+    <canvas id="fluid"></canvas>
+    <div class="tag mono">(07) Sauce<br>Real fluid dynamics<br>Solved on your GPU</div>
+    <div class="copy"><h2>Stir the<br><em>sauce.</em></h2><p class="mono">Now pouring — <b id="sauce-nm">Saffron</b> · click for the next one</p></div>
+  </section>
+
+  <section class="stack" id="signatures">
+    <div class="stack-head">
+      <div class="label rv"><b></b>(08) Signatures</div>
+      <h2 data-reveal>House specials. <em>Plated in realtime.</em></h2>
+      <p class="rv">Six signature dishes, stacked like plates on the pass. Keep scrolling — each one slides over the last.</p>
+    </div>
+    <article class="scard" style="top:12vh"><div class="txt"><div class="top mono"><span class="n">No. 01</span><span>Interference</span></div><div><h3>Reso<em>nance</em></h3><p>Moiré rings drifting in and out of phase, pulsing to a beat nobody wrote.</p></div><div class="chips"><span>Moiré</span><span>Phase</span><span>60 fps</span></div></div><div class="slot" data-k="5"></div></article>
+    <article class="scard" style="top:calc(12vh + 14px)"><div class="txt"><div class="top mono"><span class="n">No. 02</span><span>Cartography</span></div><div><h3>Topo<em>graphy</em></h3><p>Contour lines of a landscape that never stops moving, redrawn every frame.</p></div><div class="chips"><span>Isolines</span><span>fbm</span><span>Terrain</span></div></div><div class="slot" data-k="6"></div></article>
+    <article class="scard" style="top:calc(12vh + 28px)"><div class="txt"><div class="top mono"><span class="n">No. 03</span><span>Flyover</span></div><div><h3>Ember <em>terrain</em></h3><p>A wireframe world scrolling beneath you under a molten sky.</p></div><div class="chips"><span>Grid</span><span>Heightfield</span><span>Fog</span></div></div><div class="slot" data-k="7"></div></article>
+    <article class="scard" style="top:calc(12vh + 42px)"><div class="txt"><div class="top mono"><span class="n">No. 04</span><span>Print</span></div><div><h3>Half<em>tone</em></h3><p>A sphere built from print dots, shaded like a poster from 1974.</p></div><div class="chips"><span>Dots</span><span>Lambert</span><span>Riso</span></div></div><div class="slot" data-k="8"></div></article>
+    <article class="scard" style="top:calc(12vh + 56px)"><div class="txt"><div class="top mono"><span class="n">No. 05</span><span>Pastry</span></div><div><h3>Lat<em>tice</em></h3><p>Truchet tiles woven into one endless ribbon, glazed where the light runs.</p></div><div class="chips"><span>Truchet</span><span>Tiling</span><span>Flow</span></div></div><div class="slot" data-k="12"></div></article>
+    <article class="scard" style="top:calc(12vh + 70px)"><div class="txt"><div class="top mono"><span class="n">No. 06</span><span>Dusting</span></div><div><h3>Light<em>speed</em></h3><p>A fistful of sugar thrown at the camera, every grain a streak.</p></div><div class="chips"><span>Polar</span><span>Streaks</span><span>Warp</span></div></div><div class="slot" data-k="13"></div></article>
+  </section>
+
+  <section class="pin knife" id="knife" style="height:420vh">
+    <div class="stick">
+      <div class="label sec-label"><b></b>(09) Knife work</div>
+      <div class="knife-stage" id="knife-stage"><h2 class="knife-under" id="knife-under">Sharp<em>.</em></h2></div>
+      <div class="knife-hud mono"><span>Cuts <b id="k-cuts">0</b> / 6</span><span>Scroll to slice</span></div>
+    </div>
+  </section>
+
+  <section class="pin tunnel" id="tunnel" style="height:720vh">
+    <div class="stick">
+      <canvas id="tun-c" class="fill-c"></canvas>
+      <div class="tun-words"><h2>faster</h2><h2>deeper</h2><h2><em>hotter</em></h2><h2>served.</h2></div>
+      <div class="tun-hud mono">
+        <div class="row"><span>(10) Hyperdrive</span><span>Velocity <b id="t-vel">0.00</b> c</span><span>Depth <b id="t-depth">0000</b> m</span></div>
+        <div class="row"><span>Scroll = throttle</span><span id="t-stage">Stage 0 / 4</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="pin reduce" id="reduce" style="height:560vh">
+    <div class="stick opaque">
+      <canvas id="bh-c" class="fill-c"></canvas>
+      <div class="tun-words" id="bh-words"><h2>reduce</h2><h2>reduce <em>harder</em></h2><h2><em>nothing</em> escapes</h2></div>
+      <div class="tun-hud mono">
+        <div class="row"><span>(11) Reduction</span><span>Distance <b id="bh-d">61.0</b> r<sub>s</sub></span><span>Time dilation ×<b id="bh-t">1.01</b></span></div>
+        <div class="row"><span>Scroll to fall in</span><span id="bh-st">Stable orbit</span></div>
+      </div>
+    </div>
+  </section>
