@@ -1,0 +1,10 @@
+# Only what the site needs, served from the repo root.
+# Everything else (src/, audio/, build scripts, backups) stays local.
+/*
+!/.gitignore
+!/index.html
+!/loader.html
+!/preview.png
+!/images/
+!/p/
+.DS_Store
