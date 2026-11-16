@@ -1,7 +1,32 @@
 <!doctype html>
+<meta charset="utf-8">
+<script>
+var IMAGES = {
+  achyutha: "achyutha.png",
+  akhil: "akhil.png",
+  akshaj: "akshaj.png",
+  ayaan: "ayaan.png",
+  baldrav: "baldrav.png",
+  flabwath: "flabwath.png",
+  gaurav: "gaurav.png",
+  joey: "joey.png",
+};
+// ?img=<name> shows only images/<file>, stretched to the window; the rest of the page never loads.
+(function () {
+  var k = new URLSearchParams(location.search).get("img");
+  if (!k || !Object.prototype.hasOwnProperty.call(IMAGES, k)) return;
+  window.stop();
+  var src = "images/" + IMAGES[k];
+  document.documentElement.innerHTML =
+    '<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">' +
+    '<link rel="icon" href="' + src + '">' +
+    '<style>html,body{margin:0;height:100%;overflow:hidden;background:#000}img{display:block;width:100vw;height:100vh}</style>' +
+    '</head><body><img src="' + src + '" alt=""></body>';
+  document.title = k;
+})();
+</script>
 <html lang="en">
 <head>
-<meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>lowk.cooking</title>
 <meta property="og:title" content="lowk.cooking"><meta property="og:type" content="website"><meta property="og:url" content="https://lowk.cooking/"><meta property="og:image" content="https://lowk.cooking/preview.png"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="https://lowk.cooking/preview.png">
@@ -347,7 +372,7 @@ footer{isolation:isolate}
 .cursor{z-index:500}
 
 /* loader gate */
-.loader .gate{position:absolute;left:var(--gut);right:var(--gut);top:46%;transform:translateY(-50%);display:grid;gap:20px;justify-items:start;opacity:0;pointer-events:none;
+.loader .gate{position:absolute;z-index:2;left:var(--gut);right:var(--gut);top:46%;transform:translateY(-50%);display:grid;gap:20px;justify-items:start;opacity:0;pointer-events:none;
   transition:opacity .9s var(--ease) .1s,transform .9s var(--ease) .1s}
 .loader.done .gate{opacity:1;pointer-events:auto;transform:translateY(-58%)}
 .gate-k{color:var(--acc)}
@@ -362,7 +387,7 @@ footer{isolation:isolate}
 .gbtn i{width:7px;height:7px;border-radius:50%;background:var(--acc);box-shadow:0 0 12px var(--acc);animation:blink 1s steps(2) infinite}
 .gbtn.pri:hover i{background:#000;box-shadow:none}
 .loader .count{transition:opacity .9s var(--ease)}
-.loader.done .count{opacity:.16}
+.loader.done .count{opacity:.16;pointer-events:none}
 
 /* shared pinned overlay */
 .pin-ui{position:absolute;inset:96px var(--gut) 36px;display:flex;flex-direction:column;justify-content:space-between;pointer-events:none}
