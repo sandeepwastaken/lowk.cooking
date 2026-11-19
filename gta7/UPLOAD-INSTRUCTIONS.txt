@@ -1,0 +1,27 @@
+HARBOR HEAT — STATIC WEBSITE RELEASE
+
+Upload every file and the assets folder in this directory to your web host.
+Keep the directory structure intact. No Node.js server or build command is
+needed on the host.
+
+Examples:
+  Site root: upload here and visit https://example.com/
+  Subfolder: upload to /games/harbor-heat/ and visit
+             https://example.com/games/harbor-heat/
+
+Use HTTPS and a browser with WebGPU enabled (current Chrome or Edge is the
+recommended starting point). GPU support depends on the player's hardware.
+The file:// protocol is not supported. To preview locally, run:
+  python3 -m http.server 8080
+from this folder, then visit http://localhost:8080/.
+
+Serve .js files as JavaScript and .json files as JSON. Do not rewrite missing
+asset URLs to an HTML page. Keep the included third-party license files.
+Assets, game code, terrain, textures and models are included locally. Audio
+and generated sky/weather textures are synthesized by the game.
+
+For updates, replace the old index.html and upload the entire new assets
+folder. Hashed JavaScript/CSS files may be cached long term; index.html
+should revalidate so players receive updates.
+
+Regenerate this release from the source project with: npm run package:site

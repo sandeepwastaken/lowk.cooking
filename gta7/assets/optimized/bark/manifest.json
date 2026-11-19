@@ -1,0 +1,58 @@
+[
+  {
+    "id": "japanese_sycamore",
+    "name": "Japanese Sycamore",
+    "type": "texture",
+    "authors": [
+      "Charlotte Baglioni"
+    ],
+    "license": "CC0-1.0",
+    "source": "https://polyhaven.com/a/japanese_sycamore",
+    "tile": [
+      1.1,
+      2.2
+    ]
+  },
+  {
+    "id": "jolcham_oak_bark_01",
+    "name": "Jolcham Oak Bark 01",
+    "type": "texture",
+    "authors": [
+      "Charlotte Baglioni"
+    ],
+    "license": "CC0-1.0",
+    "source": "https://polyhaven.com/a/jolcham_oak_bark_01",
+    "tile": [
+      1,
+      2
+    ]
+  },
+  {
+    "id": "pine_bark",
+    "name": "Pine Bark",
+    "type": "texture",
+    "authors": [
+      "Dimitrios Savva"
+    ],
+    "license": "CC0-1.0",
+    "source": "https://polyhaven.com/a/pine_bark",
+    "tile": [
+      2,
+      2
+    ]
+  },
+  {
+    "id": "tree_bark_03",
+    "name": "Tree Bark 03",
+    "type": "texture",
+    "authors": [
+      "Rob Tuytel"
+    ],
+    "license": "CC0-1.0",
+    "source": "https://polyhaven.com/a/tree_bark_03",
+    "tile": [
+      1,
+      1
+    ]
+  }
+]

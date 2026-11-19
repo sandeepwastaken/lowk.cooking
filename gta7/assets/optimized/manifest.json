@@ -1,0 +1,122 @@
+[
+  {
+    "name": "hydrant",
+    "file": "hydrant.glb",
+    "source": "https://polyhaven.com/a/fire_hydrant",
+    "sourceId": "fire_hydrant",
+    "title": "Fire Hydrant",
+    "authors": [
+      "Gonçalo Felício"
+    ],
+    "license": "CC0-1.0",
+    "triangles": 6198,
+    "size": [
+      0.275,
+      0.799,
+      0.317
+    ]
+  },
+  {
+    "name": "trash_can",
+    "file": "trash_can.glb",
+    "source": "https://polyhaven.com/a/metal_trash_can",
+    "sourceId": "metal_trash_can",
+    "title": "Metal Trash Can",
+    "authors": [
+      "GurJas Studios"
+    ],
+    "license": "CC0-1.0",
+    "triangles": 2302,
+    "size": [
+      0.65,
+      0.906,
+      0.552
+    ]
+  },
+  {
+    "name": "cabinet_tall",
+    "file": "cabinet_tall.glb",
+    "source": "https://polyhaven.com/a/utility_box_01",
+    "sourceId": "utility_box_01",
+    "title": "Utility Box 01",
+    "authors": [
+      "James Ray Cock"
+    ],
+    "license": "CC0-1.0",
+    "triangles": 1600,
+    "size": [
+      0.52,
+      1.12,
+      0.432
+    ]
+  },
+  {
+    "name": "cabinet",
+    "file": "cabinet.glb",
+    "source": "https://polyhaven.com/a/utility_box_02",
+    "sourceId": "utility_box_02",
+    "title": "Utility Box 02",
+    "authors": [
+      "James Ray Cock"
+    ],
+    "license": "CC0-1.0",
+    "triangles": 1599,
+    "size": [
+      0.92,
+      1.119,
+      0.431
+    ]
+  },
+  {
+    "name": "bench",
+    "file": "bench.glb",
+    "source": "https://polyhaven.com/a/modular_street_seating",
+    "sourceId": "modular_street_seating",
+    "title": "Modular Street Seating",
+    "authors": [
+      "Stuart Attenborrow"
+    ],
+    "license": "CC0-1.0",
+    "triangles": 4724,
+    "size": [
+      2.452,
+      0.867,
+      0.67
+    ]
+  },
+  {
+    "name": "barrier",
+    "file": "barrier.glb",
+    "source": "https://polyhaven.com/a/concrete_road_barrier",
+    "sourceId": "concrete_road_barrier",
+    "title": "Concrete Road Barrier",
+    "authors": [
+      "Amal Kumar"
+    ],
+    "license": "CC0-1.0",
+    "triangles": 2442,
+    "size": [
+      1.544,
+      0.83,
+      0.639
+    ]
+  },
+  {
+    "name": "fence_panel",
+    "file": "fence_panel.glb",
+    "source": "https://polyhaven.com/a/modular_chainlink_fence",
+    "sourceId": "modular_chainlink_fence",
+    "title": "Modular Chainlink Fence",
+    "authors": [
+      "James Ray Cock",
+      "Amal Kumar"
+    ],
+    "license": "CC0-1.0",
+    "triangles": 2498,
+    "size": [
+      0.934,
+      2.37,
+      0.049
+    ]
+  }
+]

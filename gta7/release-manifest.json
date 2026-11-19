@@ -1,0 +1,211 @@
+{
+  "name": "Harbor Heat",
+  "builtAt": "2026-11-19T20:14:30.836Z",
+  "files": [
+    {
+      "file": "ASSET-LICENSES.md",
+      "bytes": 4462,
+      "sha256": "5a7a4948e632be51db7bf895dbf3a752d22cf8279ae1cab279df0d397578c2b0"
+    },
+    {
+      "file": "assets/cloudNoiseWorker-DDmIGLjA.js",
+      "bytes": 3125,
+      "sha256": "f60c3a4424a1fa885daa2469af2712c1fed6100fd0418e33eb93e986fb918432"
+    },
+    {
+      "file": "assets/index-bNplnekw.js",
+      "bytes": 583906,
+      "sha256": "3b5f8cee1886b3c53fc3188aaf6f8fb6a82151f21c679cbccb3a24ebc49918d2"
+    },
+    {
+      "file": "assets/index-WehBxQ8Q.css",
+      "bytes": 9752,
+      "sha256": "2a46e50b27ef01d4992bfe70d005da63d8d48fe2a3740cb28f03dbd0b8af8d74"
+    },
+    {
+      "file": "assets/optimized/bark/japanese_sycamore_diff.jpg",
+      "bytes": 764457,
+      "sha256": "1c2c39618a669ce918ee3cb6982287ba82dc8cde2e4719e70787d5699c42e735"
+    },
+    {
+      "file": "assets/optimized/bark/japanese_sycamore_nor.jpg",
+      "bytes": 516070,
+      "sha256": "842f05b038c37d49a23923a525b832d6a4e06deb47a3e2cef745476d6f4475aa"
+    },
+    {
+      "file": "assets/optimized/bark/jolcham_oak_bark_01_diff.jpg",
+      "bytes": 956921,
+      "sha256": "114b34aa813d499ae580061d51b4d7a62c0963855c128c4d869578ae0cea955e"
+    },
+    {
+      "file": "assets/optimized/bark/jolcham_oak_bark_01_nor.jpg",
+      "bytes": 1328924,
+      "sha256": "dcbc643f352d9532c74ec2fe7530c9034b22e7165eac3bb81fee59cb3fc5d45c"
+    },
+    {
+      "file": "assets/optimized/bark/manifest.json",
+      "bytes": 1038,
+      "sha256": "e830737662a590a14ca72f6b0c1f3ff646157b218eb01378f566c8703ba32bb8"
+    },
+    {
+      "file": "assets/optimized/bark/pine_bark_diff.jpg",
+      "bytes": 379609,
+      "sha256": "8fabe3e238f11c063f43c53550d925e185e5c76a1456ee0371b64e904ed7451c"
+    },
+    {
+      "file": "assets/optimized/bark/pine_bark_nor.jpg",
+      "bytes": 554734,
+      "sha256": "d8c9975a54f3c462b20896579eea720c188dbd925dd5fec534fdbbf5d07bfdd8"
+    },
+    {
+      "file": "assets/optimized/bark/tree_bark_03_diff.jpg",
+      "bytes": 528767,
+      "sha256": "77a9b426e5777b9cbc07b09532b26636871a8dc887eb08c3c099d07019d25aa0"
+    },
+    {
+      "file": "assets/optimized/bark/tree_bark_03_nor.jpg",
+      "bytes": 616111,
+      "sha256": "4fe64b37ebdec6d827217e70d76c75ae17cdc20d0a3e7d6c1d015381e805ff80"
+    },
+    {
+      "file": "assets/optimized/barrier.glb",
+      "bytes": 286148,
+      "sha256": "35f990f80b7d02de8b5fde70e0cdc8fdbf7424e3f43776d1f67e537afd5b2641"
+    },
+    {
+      "file": "assets/optimized/bench.glb",
+      "bytes": 727684,
+      "sha256": "6da38ca8b49f996ac1ad9507088c0226d9da9cb2f0360207cf69d6abc0fa5b4e"
+    },
+    {
+      "file": "assets/optimized/cabinet_tall.glb",
+      "bytes": 249364,
+      "sha256": "e4c8d571b526391dd8ab296485ea58e9a0cc0d00a54c48e0f9c71bb277b1ea0d"
+    },
+    {
+      "file": "assets/optimized/cabinet.glb",
+      "bytes": 258100,
+      "sha256": "bff842dbabc81ee99e7a9303951c9c722d3fcb99441032348fde923485716844"
+    },
+    {
+      "file": "assets/optimized/delivery-van.glb",
+      "bytes": 637364,
+      "sha256": "9bf34cceaa3f25088d37e6e0a737effc2e5d7a47b892514782fb7a90543808d4"
+    },
+    {
+      "file": "assets/optimized/fence_panel.glb",
+      "bytes": 654964,
+      "sha256": "d3ed4663154b05e4861a634df3e8888d8b32ab9202c5d4d9e32faa6139358945"
+    },
+    {
+      "file": "assets/optimized/generic-convertible-roadster.glb",
+      "bytes": 480888,
+      "sha256": "66cdb3c9d6757753aec934ce1aa5b11433d0204f11c65687e945198f3d3da048"
+    },
+    {
+      "file": "assets/optimized/generic-hot-hatch.glb",
+      "bytes": 607476,
+      "sha256": "dd1db0ab0aa5c630cfef180f8a6229d218cf89b7638a29c41747e63cd6e5d848"
+    },
+    {
+      "file": "assets/optimized/generic-mid-engine-supercar.glb",
+      "bytes": 651720,
+      "sha256": "3ab5839c8354bc29b8614273aa7e81bf7cfd03a3519a5acd7522549f1c95c963"
+    },
+    {
+      "file": "assets/optimized/generic-minivan-mpv.glb",
+      "bytes": 717628,
+      "sha256": "e07f11e913045d17d07067d6d00be21ac2859a5d8a5f1b668c35f666631d7434"
+    },
+    {
+      "file": "assets/optimized/generic-station-wagon-estate-car.glb",
+      "bytes": 643516,
+      "sha256": "375c8712879a4a1a0b798ffa482341561cb743677b47ccc4e505b91adb9aaa8c"
+    },
+    {
+      "file": "assets/optimized/generic-two-door-coupe.glb",
+      "bytes": 582756,
+      "sha256": "c5757b20c0516d8f02eb28c0b3b99fd2e1836d86699f036ae8a06db2e48d68ca"
+    },
+    {
+      "file": "assets/optimized/helicopter.glb",
+      "bytes": 5317816,
+      "sha256": "3c1e3339e93eb559c41c087bab282ac054f1db4743fb84205dd8a1f893d62a32"
+    },
+    {
+      "file": "assets/optimized/hydrant.glb",
+      "bytes": 386504,
+      "sha256": "b153414ae37d623984f5cf11cbf2549a27571e3acae42d02fc568b53986f75de"
+    },
+    {
+      "file": "assets/optimized/manifest.json",
+      "bytes": 2443,
+      "sha256": "c18f20dbe5a165f21c1c7d824b4a906067fcdaef08c891f9b05a5e4d2e0bb7dd"
+    },
+    {
+      "file": "assets/optimized/pickup-truck.glb",
+      "bytes": 806552,
+      "sha256": "7b308573a285f95935cff99577c74d2640caa9c481a36cf0a7092d391375f226"
+    },
+    {
+      "file": "assets/optimized/sedan.glb",
+      "bytes": 641908,
+      "sha256": "187c9935c40f952837fe2d98200b390415e695196d7b1280c9ec3ebb1bf4961b"
+    },
+    {
+      "file": "assets/optimized/surfaces/asphalt_02.jpg",
+      "bytes": 731707,
+      "sha256": "1aa5ce99f58a625c71d48cfc3e68b65ca85ccb00f39e045c0a928608a0ea25ed"
+    },
+    {
+      "file": "assets/optimized/surfaces/concrete_slab_wall.jpg",
+      "bytes": 576735,
+      "sha256": "5eaccddc4c15dfcab06d6d7a79f1884bde76cf5eed9b892a188ec2acf373de72"
+    },
+    {
+      "file": "assets/optimized/suv.glb",
+      "bytes": 638564,
+      "sha256": "e6a2b224460aeffec6fe87d549251ccb68f8febc19fa80465a39735ed342fd9c"
+    },
+    {
+      "file": "assets/optimized/trash_can.glb",
+      "bytes": 305584,
+      "sha256": "a7eddd0da1112e28016172723b6fefe4c02fe05c8ecfbdc370df58fc90ce9bde"
+    },
+    {
+      "file": "assets/terrain/height.bin",
+      "bytes": 2101250,
+      "sha256": "b971265e4f15a83d9788c6b832139ceab8ea8b2a947c1d74d244bb63e884a310"
+    },
+    {
+      "file": "assets/terrain/height.json",
+      "bytes": 103,
+      "sha256": "899f3b6f42ffcc923e27e402575cfae4351d6fe1e55564588eef2c86675565df"
+    },
+    {
+      "file": "assets/terrainWorker-BUe1veOt.js",
+      "bytes": 11317,
+      "sha256": "dd049bebe3a1f0987984a9246c66e1da53dbc48ba77008e22bd5ab78dd483d70"
+    },
+    {
+      "file": "assets/three-BQFXXoq9.js",
+      "bytes": 1060056,
+      "sha256": "cec14279111008fba0d8d63f45c7c3bb999ca0391748f646cb1c80d29cbfb043"
+    },
+    {
+      "file": "index.html",
+      "bytes": 667,
+      "sha256": "32215254dcb34c55723c78a7275f7fb36d317bb729ba2b8d47043c69d42dea37"
+    },
+    {
+      "file": "THREE-LICENSE.txt",
+      "bytes": 1081,
+      "sha256": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc"
+    },
+    {
+      "file": "UPLOAD-INSTRUCTIONS.txt",
+      "bytes": 1241,
+      "sha256": "41c995454ad2a5c473a5613924a4ae118b039883eae815b2c88c707190d96c6d"
+    }
+  ]
+}

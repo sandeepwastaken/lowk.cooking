@@ -2,6 +2,7 @@
 # Everything else (src/, audio/, build scripts, backups) stays local.
 /*
 !/.gitignore
+!/gta7
 !/index.html
 !/loader.html
 !/preview.png
