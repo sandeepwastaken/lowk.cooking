@@ -1,11 +1,31 @@
 {
   "name": "Harbor Heat",
-  "builtAt": "2026-11-25T17:00:21.903Z",
+  "builtAt": "2026-11-25T19:26:15.601Z",
   "files": [
+    {
+      "file": ".DS_Store",
+      "bytes": 6148,
+      "sha256": "47281ec38da4bc22488610f443a41637816574a3f0181ce7c448a2a0976668aa"
+    },
     {
       "file": ".htaccess",
       "bytes": 256,
       "sha256": "5918432490ec5044f195e8108177d4f39c8e7d32eb9b8d158bfbc0c0c2fb5186"
+    },
+    {
+      "file": "art/1.jpg",
+      "bytes": 296475,
+      "sha256": "482db5c5156e0f147fb8b4439ef41ada449d956865c9e4351ab16d2ceada5e49"
+    },
+    {
+      "file": "art/2.jpg",
+      "bytes": 203720,
+      "sha256": "fa507833013b4e77eed10d591ea099ec20f5904ea3a98252c4922e459461ff14"
+    },
+    {
+      "file": "art/3.jpg",
+      "bytes": 338980,
+      "sha256": "9a7494608f76865f7504e20d646e2286936c046cd8e37143141c13ac8b3b8704"
     },
     {
       "file": "ASSET-LICENSES.md",
@@ -13,19 +33,29 @@
       "sha256": "5a7a4948e632be51db7bf895dbf3a752d22cf8279ae1cab279df0d397578c2b0"
     },
     {
+      "file": "assets/.DS_Store",
+      "bytes": 10244,
+      "sha256": "52b222a1fc2a5b03e659757f1e53dc4665289d8a2f1e9d018b9f585e40808369"
+    },
+    {
       "file": "assets/cloudNoiseWorker-DDmIGLjA.js",
       "bytes": 3125,
       "sha256": "f60c3a4424a1fa885daa2469af2712c1fed6100fd0418e33eb93e986fb918432"
     },
     {
-      "file": "assets/index-C6Lnou2G.css",
-      "bytes": 20070,
-      "sha256": "64423ecb3e4526543d653aa99ffb85b1a3c810e0d6d505526b8ca6a361e2eaa3"
+      "file": "assets/index-BERoQoq8.css",
+      "bytes": 31158,
+      "sha256": "fdad65e59659d27106a974e32aba8739946df06cc6b2c7f34384eb758bd6e13c"
     },
     {
-      "file": "assets/index-CYmk9Tlr.js",
-      "bytes": 841181,
-      "sha256": "e68b208db9b83c5f09b2c6a8678c76544ce603b07d9aefc7dd97d0168f05f5ed"
+      "file": "assets/index-BskrJE_4.js",
+      "bytes": 1008292,
+      "sha256": "dc11dbad84508f9b6e3e6e59ebd0beb87df02d0facd9ba7d154df84073948364"
+    },
+    {
+      "file": "assets/optimized/.DS_Store",
+      "bytes": 6148,
+      "sha256": "a079ab93c0d8dbdca69b7fd1f92a3bc29cadfd270c70808bd964d1309084bbb4"
     },
     {
       "file": "assets/optimized/bark/japanese_sycamore_diff.jpg",
@@ -193,14 +223,14 @@
       "sha256": "dd049bebe3a1f0987984a9246c66e1da53dbc48ba77008e22bd5ab78dd483d70"
     },
     {
-      "file": "assets/three-BmcVBr82.js",
-      "bytes": 1095837,
-      "sha256": "19204cf0281b8969cd8e05fb5898e628223b5e7db4f14e8a9bb599a2de2ea809"
+      "file": "assets/three-xeYYhBxt.js",
+      "bytes": 1097534,
+      "sha256": "39b6a0d8012616f9e25bd2af38e0774cd6133a3cc308788f15b2fa6c5b4ffd7a"
     },
     {
       "file": "index.html",
-      "bytes": 667,
-      "sha256": "d727c2536bc059a129e042eb7f6ce0c527760e781d2131b62674f8d3302ff9cf"
+      "bytes": 1002,
+      "sha256": "14fe3b984acd060f2b04be0ff5beef3fc4ec6b8bece0e26e88ec1fc386c9ab98"
     },
     {
       "file": "server/.htaccess",
