@@ -87,8 +87,6 @@ try {
             $messages=run($db,'SELECT id,src,kind,data FROM msgs WHERE code=? AND dst=? AND id>? ORDER BY id LIMIT 160',[$code,$id,$since])->fetchAll();
             $messages=array_map(fn($m)=>['id'=>(int)$m['id'],'from'=>(int)$m['src'],'kind'=>$m['kind'],'data'=>json_decode($m['data'],true)],$messages);
             $out=['messages'=>$messages,'peers'=>peers($db,$code),'host'=>$host,'now'=>microtime(true)*1000];
-        } elseif($action==='ready') {
-            if(!is_bool($in['ready']??null))fail(400,'Invalid ready state');run($db,'UPDATE peers SET ready=? WHERE id=?',[(int)$in['ready'],$id]);
         } elseif($action==='kick') {
             if($id!==$host)fail(403,'Only the host can remove a player');$target=$in['peer']??0;
             if(!is_int($target)||$target===$id)fail(400,'Invalid peer');run($db,'DELETE FROM peers WHERE code=? AND id=?',[$code,$target]);
