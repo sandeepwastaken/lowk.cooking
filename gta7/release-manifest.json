@@ -1,12 +1,7 @@
 {
   "name": "Harbor Heat",
-  "builtAt": "2026-11-25T06:05:52.079Z",
+  "builtAt": "2026-11-25T17:00:21.903Z",
   "files": [
-    {
-      "file": ".DS_Store",
-      "bytes": 6148,
-      "sha256": "47281ec38da4bc22488610f443a41637816574a3f0181ce7c448a2a0976668aa"
-    },
     {
       "file": ".htaccess",
       "bytes": 256,
@@ -16,11 +11,6 @@
       "file": "ASSET-LICENSES.md",
       "bytes": 4462,
       "sha256": "5a7a4948e632be51db7bf895dbf3a752d22cf8279ae1cab279df0d397578c2b0"
-    },
-    {
-      "file": "assets/.DS_Store",
-      "bytes": 10244,
-      "sha256": "52b222a1fc2a5b03e659757f1e53dc4665289d8a2f1e9d018b9f585e40808369"
     },
     {
       "file": "assets/cloudNoiseWorker-DDmIGLjA.js",
@@ -33,14 +23,9 @@
       "sha256": "64423ecb3e4526543d653aa99ffb85b1a3c810e0d6d505526b8ca6a361e2eaa3"
     },
     {
-      "file": "assets/index-Dg4Jnz1A.js",
-      "bytes": 835858,
-      "sha256": "879a05d73401dfad0b4cdedf928d480e864caf8f46b981c94877f953eb9ee92d"
-    },
-    {
-      "file": "assets/optimized/.DS_Store",
-      "bytes": 6148,
-      "sha256": "a079ab93c0d8dbdca69b7fd1f92a3bc29cadfd270c70808bd964d1309084bbb4"
+      "file": "assets/index-CYmk9Tlr.js",
+      "bytes": 841181,
+      "sha256": "e68b208db9b83c5f09b2c6a8678c76544ce603b07d9aefc7dd97d0168f05f5ed"
     },
     {
       "file": "assets/optimized/bark/japanese_sycamore_diff.jpg",
@@ -208,14 +193,14 @@
       "sha256": "dd049bebe3a1f0987984a9246c66e1da53dbc48ba77008e22bd5ab78dd483d70"
     },
     {
-      "file": "assets/three-CWc-Wojp.js",
-      "bytes": 1095828,
-      "sha256": "5392ab91301dec41ae04b83555c6cb86ace87a543466b790656da2c949c11296"
+      "file": "assets/three-BmcVBr82.js",
+      "bytes": 1095837,
+      "sha256": "19204cf0281b8969cd8e05fb5898e628223b5e7db4f14e8a9bb599a2de2ea809"
     },
     {
       "file": "index.html",
       "bytes": 667,
-      "sha256": "40686679d486352cfab6313c22e9383440d32d4ce81a76fc5ef6a0f35744e965"
+      "sha256": "d727c2536bc059a129e042eb7f6ce0c527760e781d2131b62674f8d3302ff9cf"
     },
     {
       "file": "server/.htaccess",
@@ -224,8 +209,8 @@
     },
     {
       "file": "server/api.php",
-      "bytes": 8457,
-      "sha256": "10366b86b8550d8d4b8b94206c271344ad437ecf50dfd877939d25a5e008395c"
+      "bytes": 8618,
+      "sha256": "c1150c219c312486b28afc075c92aea981b0d44875c6d65e494bfec4a4b5cc72"
     },
     {
       "file": "server/bootstrap.php",

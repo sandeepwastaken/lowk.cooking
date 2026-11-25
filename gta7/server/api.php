@@ -79,7 +79,8 @@ try {
                 if($id!==$host&&$to!==$host)fail(403,'Guests relay through the host');
                 if(($label==='state'?($data['id']??null):($data['from']??null))!==$id && $id!==$host)fail(403,'Peer identity mismatch');
                 $json=json_encode($data);if(strlen($json)>12000)fail(413,'Relay packet too large');
-                if($label==='state')run($db,"DELETE FROM msgs WHERE code=? AND src=? AND dst=? AND kind='state'",[$code,$id,$to]);
+                if($label==='state'&&!is_int($data['id']??null))fail(400,'Invalid state identity');
+                if($label==='state')run($db,"DELETE FROM msgs WHERE code=? AND src=? AND dst=? AND kind='state' AND json_extract(data,'$.id')=CAST(? AS INTEGER)",[$code,$id,$to,$data['id']]);
                 run($db,'INSERT INTO msgs(code,src,dst,kind,data,at) VALUES(?,?,?,?,?,?)',[$code,$id,$to,$label,$json,$now]);
             }
             $since=$in['since']??0;if(!is_int($since)||$since<0)fail(400,'Invalid cursor');

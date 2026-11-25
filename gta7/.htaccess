@@ -1,0 +1,8 @@
+Options -Indexes
+DirectoryIndex index.html
+<IfModule mod_headers.c>
+  Header always set X-Content-Type-Options "nosniff"
+  <FilesMatch "^(index\.html|setup\.php|release-manifest\.json)$">
+    Header set Cache-Control "no-cache"
+  </FilesMatch>
+</IfModule>
