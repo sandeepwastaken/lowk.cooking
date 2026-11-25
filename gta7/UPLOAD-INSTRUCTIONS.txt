@@ -1,27 +1,18 @@
-HARBOR HEAT — STATIC WEBSITE RELEASE
+HARBOR HEAT — YOUR TWO HOSTS
 
-Upload every file and the assets folder in this directory to your web host.
-Keep the directory structure intact. No Node.js server or build command is
-needed on the host.
+FRONTEND: upload the CONTENTS of harbor-heat-upload/ to lowk.cooking/gta7/.
+BACKEND: upload the CONTENTS of harbor-heat-backend/ to
+         sandeepshenoy.dev public_html/harbor-heat-api/.
 
-Examples:
-  Site root: upload here and visit https://example.com/
-  Subfolder: upload to /games/harbor-heat/ and visit
-             https://example.com/games/harbor-heat/
+Check: https://sandeepshenoy.dev/harbor-heat-api/setup.php
+Play:  https://lowk.cooking/gta7/
 
-Use HTTPS and a browser with WebGPU enabled (current Chrome or Edge is the
-recommended starting point). GPU support depends on the player's hardware.
-The file:// protocol is not supported. To preview locally, run:
-  python3 -m http.server 8080
-from this folder, then visit http://localhost:8080/.
+The client URL and CORS allowlist are already configured for these domains.
+Keep hidden .htaccess files. PHP 8.1+ and pdo_sqlite are required only on
+sandeepshenoy.dev. No game-source edits, passwords, Node.js, Composer or
+manual database setup are needed. The backend creates its private storage.
 
-Serve .js files as JavaScript and .json files as JSON. Do not rewrite missing
-asset URLs to an HTML page. Keep the included third-party license files.
-Assets, game code, terrain, textures and models are included locally. Audio
-and generated sky/weather textures are synthesized by the game.
-
-For updates, replace the old index.html and upload the entire new assets
-folder. Hashed JavaScript/CSS files may be cached long term; index.html
-should revalidate so players receive updates.
-
-Regenerate this release from the source project with: npm run package:site
+The frontend folder also contains PHP for a same-host deployment; lowk.cooking
+only needs index.html and assets/. The extra PHP copies can be omitted there.
+The actual multiplayer backend on lowk.cooking is never used: the client selects
+the sandeepshenoy.dev URL automatically for that hostname.

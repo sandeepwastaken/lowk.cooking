@@ -1,0 +1,4 @@
+Options -Indexes
+<FilesMatch "^(config|bootstrap)\.php$|\.(sqlite|sqlite3|db|log)(-|$)">
+  Require all denied
+</FilesMatch>

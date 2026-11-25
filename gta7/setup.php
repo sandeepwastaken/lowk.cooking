@@ -1,0 +1,6 @@
+<?php
+require __DIR__.'/server/bootstrap.php';
+header('Cache-Control: no-store');header('X-Content-Type-Options: nosniff');
+header("Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; base-uri 'none'; frame-ancestors 'none'");
+$h=health();http_response_code($h['ok']?200:503);
+?><!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>Harbor Heat setup</title><style>body{font:16px system-ui;background:#101c24;color:#e2edea;max-width:650px;margin:8vh auto;padding:24px;line-height:1.6}li{margin:12px 0}a{color:#8fdec4}</style><h1>Harbor Heat</h1><p><?= $h['ok']?'Multiplayer is ready. No game files need editing.':'Multiplayer needs a hosting setting changed.' ?></p><ul><?php foreach(['php81'=>'PHP 8.1 or newer','pdo_sqlite'=>'PDO SQLite extension','storage'=>'Private room storage'] as $k=>$label):?><li><?= $h['checks'][$k]?'✓':'✕' ?> <?=htmlspecialchars($label,ENT_QUOTES,'UTF-8')?></li><?php endforeach ?></ul><p>Open the game in two browsers, press O, create a room and join using its code. WebRTC connects directly where possible. The PHP relay connects players on restrictive networks automatically.</p><?php if(!$h['checks']['pdo_sqlite']):?><p>In hPanel → Websites → Manage → PHP Configuration → Extensions, enable pdo_sqlite.</p><?php endif ?><p><a href="./">Open the game</a></p></html>
