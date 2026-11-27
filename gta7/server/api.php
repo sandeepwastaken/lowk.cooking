@@ -79,6 +79,10 @@ try {
                 if($id!==$host&&$to!==$host)fail(403,'Guests relay through the host');
                 if(($label==='state'?($data['id']??null):($data['from']??null))!==$id && $id!==$host)fail(403,'Peer identity mismatch');
                 $json=json_encode($data);if(strlen($json)>12000)fail(413,'Relay packet too large');
+                if($label==='event'&&in_array($data['k']??null,['ambient','world','transit','driveCar','damage'],true)
+                    &&($id!==$host||($data['from']??null)!==$host))fail(403,'Host packet required');
+                if($label==='event'&&($data['k']??null)==='ambient')
+                    run($db,"DELETE FROM msgs WHERE code=? AND src=? AND dst=? AND kind='event' AND json_extract(data,'$.k')='ambient'",[$code,$id,$to]);
                 if($label==='state'&&!is_int($data['id']??null))fail(400,'Invalid state identity');
                 if($label==='state')run($db,"DELETE FROM msgs WHERE code=? AND src=? AND dst=? AND kind='state' AND json_extract(data,'$.id')=CAST(? AS INTEGER)",[$code,$id,$to,$data['id']]);
                 run($db,'INSERT INTO msgs(code,src,dst,kind,data,at) VALUES(?,?,?,?,?,?)',[$code,$id,$to,$label,$json,$now]);
@@ -87,6 +91,8 @@ try {
             $messages=run($db,'SELECT id,src,kind,data FROM msgs WHERE code=? AND dst=? AND id>? ORDER BY id LIMIT 160',[$code,$id,$since])->fetchAll();
             $messages=array_map(fn($m)=>['id'=>(int)$m['id'],'from'=>(int)$m['src'],'kind'=>$m['kind'],'data'=>json_decode($m['data'],true)],$messages);
             $out=['messages'=>$messages,'peers'=>peers($db,$code),'host'=>$host,'now'=>microtime(true)*1000];
+        } elseif($action==='ready') {
+            if(!is_bool($in['ready']??null))fail(400,'Invalid ready state');run($db,'UPDATE peers SET ready=? WHERE id=?',[(int)$in['ready'],$id]);
         } elseif($action==='kick') {
             if($id!==$host)fail(403,'Only the host can remove a player');$target=$in['peer']??0;
             if(!is_int($target)||$target===$id)fail(400,'Invalid peer');run($db,'DELETE FROM peers WHERE code=? AND id=?',[$code,$target]);

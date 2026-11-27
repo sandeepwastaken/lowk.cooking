@@ -34,7 +34,10 @@ function db(): PDO {
     $db->exec('CREATE TABLE IF NOT EXISTS rooms (code TEXT PRIMARY KEY, host INTEGER, created INTEGER, touched INTEGER)');
     $roomCols=array_column($db->query('PRAGMA table_info(rooms)')->fetchAll(),'name');
     foreach(['name'=>"TEXT DEFAULT 'Harbor room'",'visibility'=>"TEXT DEFAULT 'public'",'password'=>"TEXT DEFAULT ''",'invite'=>"TEXT DEFAULT ''"] as $name=>$sql)if(!in_array($name,$roomCols,true))$db->exec('ALTER TABLE rooms ADD COLUMN '.$name.' '.$sql);
-    $db->exec('CREATE TABLE IF NOT EXISTS peers (id INTEGER PRIMARY KEY AUTOINCREMENT, code TEXT, token TEXT, name TEXT, seen INTEGER)');
+    $db->exec('CREATE TABLE IF NOT EXISTS peers (id INTEGER PRIMARY KEY AUTOINCREMENT, code TEXT, token TEXT, name TEXT, seen INTEGER, ready INTEGER DEFAULT 0)');
+    // Migrate uploads from the original server without losing existing rooms.
+    $columns = array_column($db->query('PRAGMA table_info(peers)')->fetchAll(), 'name');
+    if (!in_array('ready', $columns, true)) $db->exec('ALTER TABLE peers ADD COLUMN ready INTEGER DEFAULT 0');
     $db->exec('CREATE TABLE IF NOT EXISTS msgs (id INTEGER PRIMARY KEY AUTOINCREMENT, code TEXT, src INTEGER, dst INTEGER, kind TEXT, data TEXT, at INTEGER)');
     $db->exec('CREATE INDEX IF NOT EXISTS msgs_dst ON msgs(code,dst,id)');
     $db->exec('CREATE TABLE IF NOT EXISTS hits (ip TEXT, minute INTEGER, n INTEGER, PRIMARY KEY(ip,minute))');
@@ -72,11 +75,11 @@ function sweep(PDO $db): void {
     $db->exec('UPDATE rooms SET host=(SELECT MIN(id) FROM peers WHERE peers.code=rooms.code) WHERE host NOT IN (SELECT id FROM peers)');
 }
 function peers(PDO $db,string $code): array {
-    return array_map(fn($p)=>['id'=>(int)$p['id'],'name'=>$p['name']],run($db,'SELECT id,name FROM peers WHERE code=? ORDER BY id',[$code])->fetchAll());
+    return array_map(fn($p)=>['id'=>(int)$p['id'],'name'=>$p['name'],'ready'=>(bool)$p['ready']],run($db,'SELECT id,name,ready FROM peers WHERE code=? ORDER BY id',[$code])->fetchAll());
 }
 function auth(PDO $db, string $code, mixed $token): array {
     if (!is_string($token)||!preg_match('/^[0-9a-f]{32}$/D',$token)) fail(401,'Invalid room session');
-    $me=run($db,'SELECT id,name FROM peers WHERE code=? AND token=?',[$code,hash('sha256',$token)])->fetch();
+    $me=run($db,'SELECT id,name,ready FROM peers WHERE code=? AND token=?',[$code,hash('sha256',$token)])->fetch();
     if (!$me) fail(404,'Room expired or you were removed; join again');
     run($db,'UPDATE peers SET seen=? WHERE id=?',[time(),$me['id']]);run($db,'UPDATE rooms SET touched=? WHERE code=?',[time(),$code]);
     return $me;
