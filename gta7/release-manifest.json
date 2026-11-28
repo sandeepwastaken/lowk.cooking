@@ -1,6 +1,6 @@
 {
   "name": "Harbor Heat",
-  "builtAt": "2026-11-28T03:04:58.899Z",
+  "builtAt": "2026-11-28T03:47:24.690Z",
   "files": [
     {
       "file": ".DS_Store",
@@ -48,9 +48,9 @@
       "sha256": "e64fe684131348b1df9fdf52fd03b8fd1eeef7cb754d0a3a067f2037a35bbdfc"
     },
     {
-      "file": "assets/index-mQH3nJrP.js",
-      "bytes": 1077468,
-      "sha256": "b6501922e412f39fe8a0a07ddd40581123be2129cabaf9bc2f59d134570c9643"
+      "file": "assets/index-DNzJ6Gqi.js",
+      "bytes": 1095657,
+      "sha256": "170af03928cb342eba66548c8af841e34b973ea6f65e552b7bda19d40faec6fc"
     },
     {
       "file": "assets/optimized/.DS_Store",
@@ -163,11 +163,6 @@
       "sha256": "c5757b20c0516d8f02eb28c0b3b99fd2e1836d86699f036ae8a06db2e48d68ca"
     },
     {
-      "file": "assets/optimized/helicopter.glb",
-      "bytes": 5317816,
-      "sha256": "3c1e3339e93eb559c41c087bab282ac054f1db4743fb84205dd8a1f893d62a32"
-    },
-    {
       "file": "assets/optimized/hydrant.glb",
       "bytes": 386504,
       "sha256": "b153414ae37d623984f5cf11cbf2549a27571e3acae42d02fc568b53986f75de"
@@ -230,7 +225,7 @@
     {
       "file": "index.html",
       "bytes": 1002,
-      "sha256": "be7bde65598b76a9e85344d9b7a0ecb01270456602f56c9da849104b58dbdccb"
+      "sha256": "6dd6569f963c8827c985d0426592fd2c1011c3045fc37f539c5faff862fe8a2e"
     },
     {
       "file": "server/.htaccess",
