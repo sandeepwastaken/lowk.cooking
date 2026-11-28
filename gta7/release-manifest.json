@@ -1,6 +1,6 @@
 {
   "name": "Harbor Heat",
-  "builtAt": "2026-11-27T23:59:41.100Z",
+  "builtAt": "2026-11-28T03:04:58.899Z",
   "files": [
     {
       "file": ".DS_Store",
@@ -14,18 +14,18 @@
     },
     {
       "file": "art/1.jpg",
-      "bytes": 296475,
-      "sha256": "482db5c5156e0f147fb8b4439ef41ada449d956865c9e4351ab16d2ceada5e49"
+      "bytes": 595388,
+      "sha256": "e0ae674f175595369ed5edfc46910c68700e0ff1a7bbe94da8d3340e54c0e923"
     },
     {
       "file": "art/2.jpg",
-      "bytes": 203720,
-      "sha256": "fa507833013b4e77eed10d591ea099ec20f5904ea3a98252c4922e459461ff14"
+      "bytes": 375151,
+      "sha256": "1067d042fc78cac0e13738bcded845c251c6ef494a9036f232bf12d7fd19d585"
     },
     {
       "file": "art/3.jpg",
-      "bytes": 338980,
-      "sha256": "9a7494608f76865f7504e20d646e2286936c046cd8e37143141c13ac8b3b8704"
+      "bytes": 673188,
+      "sha256": "bf3b111b8d6534b125ff4cef9e07f601efdca7e583f7a19ddb57ad9356fa44f1"
     },
     {
       "file": "ASSET-LICENSES.md",
@@ -43,14 +43,14 @@
       "sha256": "f60c3a4424a1fa885daa2469af2712c1fed6100fd0418e33eb93e986fb918432"
     },
     {
-      "file": "assets/index-4lNAysvb.js",
-      "bytes": 1051756,
-      "sha256": "26c5d0d988f38e37644eda1c22d09b522d2c6297256cd68189673d4f4df3fa2e"
+      "file": "assets/index-C-eft6em.css",
+      "bytes": 32793,
+      "sha256": "e64fe684131348b1df9fdf52fd03b8fd1eeef7cb754d0a3a067f2037a35bbdfc"
     },
     {
-      "file": "assets/index-BYyCrYwm.css",
-      "bytes": 32611,
-      "sha256": "3e367c45f31c6e3b8cf5fa4adfbcd7b660990832810dbdae1d400f748df103bb"
+      "file": "assets/index-mQH3nJrP.js",
+      "bytes": 1077468,
+      "sha256": "b6501922e412f39fe8a0a07ddd40581123be2129cabaf9bc2f59d134570c9643"
     },
     {
       "file": "assets/optimized/.DS_Store",
@@ -230,7 +230,7 @@
     {
       "file": "index.html",
       "bytes": 1002,
-      "sha256": "eb963eae0eb083254a64b2a0f7f5a6daee6352f4ff4c4f82b71635460ffc4175"
+      "sha256": "be7bde65598b76a9e85344d9b7a0ecb01270456602f56c9da849104b58dbdccb"
     },
     {
       "file": "server/.htaccess",
